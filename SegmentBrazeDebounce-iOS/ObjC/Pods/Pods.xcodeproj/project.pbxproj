@@ -1,0 +1,821 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		016DEFC011D48933CE608CD77C226BCB /* SEGSegmentIntegrationFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CB719FBA354FFFEA0B4493F39F5C54D /* SEGSegmentIntegrationFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0324BCE792BBCEAA7D89814C71A7CF62 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 318F6AA3D2C4DA644A5A7EC992B1E35F /* UIKit.framework */; };
+		16AC0D40B9B6CD6B8B6E8B1A46A10984 /* UIViewController+SEGScreen.h in Headers */ = {isa = PBXBuildFile; fileRef = BB2DA87DD4F4B649404213F4A67ED30F /* UIViewController+SEGScreen.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1771FB5831C64D1663848033A4F7164B /* SEGUserDefaultsStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = FF26D42BAC51435CB00A709D50C2C3D9 /* SEGUserDefaultsStorage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19C5F4992EAD9CFF33ADC4D741865AFC /* SEGContext.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFF3C21A91C7C54BC1120802D1ED602 /* SEGContext.m */; };
+		1CBFBFAB3A2CBB46CB1CE442E7A03C84 /* Analytics-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CA92B99D24B6D3415C9DB103BB7EC5A /* Analytics-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D998FA81A7384756482F055619879D8 /* SEGIntegration.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B1978BB9E2E25DF76676D5D4F27830F /* SEGIntegration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2100B6C6064764844E170B166B2BEBCF /* SEGPayload.h in Headers */ = {isa = PBXBuildFile; fileRef = F590E75CC695DD3EDB285A5C9FC8D220 /* SEGPayload.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23CDE292C19FE144F63D5ABAE26E7E86 /* NSData+SEGGZIP.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C1E387CF7A8508C58900F94D7F869C /* NSData+SEGGZIP.m */; };
+		261E61B46FAE966287387E6151CDCA61 /* SEGAnalyticsConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B0970BD7636C76890A20414955C5854 /* SEGAnalyticsConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		26C797F478AD450003AF011115A5E697 /* SEGAnalyticsConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = B0A1D5CC06B45016F36123EFB9A07B5C /* SEGAnalyticsConfiguration.m */; };
+		2787BC674AD9478982563FF0D05A471A /* SEGTrackPayload.m in Sources */ = {isa = PBXBuildFile; fileRef = 47A716193124E2CE02C202CF05B837C1 /* SEGTrackPayload.m */; };
+		288538A74C9C2BF5FE023932C9AAAAD2 /* SEGAnalyticsUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = D543FA4134A323E72BA6DE3DB803A5A0 /* SEGAnalyticsUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2A27ECC7375D7A60FB349D1DEF97D209 /* SEGTrackPayload.h in Headers */ = {isa = PBXBuildFile; fileRef = F516FB1FCB19250D2BB9ED3446E9CF79 /* SEGTrackPayload.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3003F28FE9B73C33CDEC4EA8AD92662C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94181C031F51E963EB4FB82906120D25 /* SystemConfiguration.framework */; };
+		39DE7EFA0BAD588A3607B69C46778B22 /* SEGUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 48F2096D264F3D04E770130196D30DD5 /* SEGUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3C82DFB36EC0432629A2BD33180E83F9 /* SEGIntegrationFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 345566619A5D004C6563659CCA363A17 /* SEGIntegrationFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		41F3A47D2A6F7FBD88A1CBCCC47A769E /* SEGMiddleware.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A032883B507D57D411E8BC89AA13F38 /* SEGMiddleware.m */; };
+		4630C5C9C6454B7354B2DDC4C061FC72 /* SEGAnalytics.h in Headers */ = {isa = PBXBuildFile; fileRef = 60B865167B1EE301CA8D422701E641D5 /* SEGAnalytics.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56BA6C4555ABD4638DBE2C12EBFF2A2C /* SEGUserDefaultsStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = BBCF8CDCD94821529B1B754E4F0F0D2E /* SEGUserDefaultsStorage.m */; };
+		57FBFF6B31A9CA5846AAAC0D3C9EC059 /* SEGGroupPayload.m in Sources */ = {isa = PBXBuildFile; fileRef = 13D9386A331592836B87D51E2E6D4997 /* SEGGroupPayload.m */; };
+		580F8FEBCC0AB691D807790DD255BE56 /* SEGReachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 369C165ECED231EDCAA579A7D7C7FBE2 /* SEGReachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5894C6ED52D0C1DC487795734230EC72 /* SEGPayload.m in Sources */ = {isa = PBXBuildFile; fileRef = 27096BF49DDE719FDB7EA03040D059BE /* SEGPayload.m */; };
+		58D8EB1CA8AA5E01E40ABD8DE806AF48 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C20A44C448A276DEDEC5216ED55E7D3 /* Security.framework */; };
+		58E7E64422D87B75C174BCE2F2C01C73 /* SEGScreenPayload.m in Sources */ = {isa = PBXBuildFile; fileRef = D5AB67E476B2FB9BBB94F7D3BF6EDC0B /* SEGScreenPayload.m */; };
+		5D39E99AA122E44AE78B9D15C0A1D71F /* SEGHTTPClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E8AAAEEF8F8D9EF695A69AB07981181 /* SEGHTTPClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		61268F0616C261A1516729CFA4ABF10E /* SEGAliasPayload.h in Headers */ = {isa = PBXBuildFile; fileRef = 6159F1B1594ABD631254F1FCC3F5375C /* SEGAliasPayload.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6767276328F17625D08771C5E730C069 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FD00D1D3FBB6D650D45ED08AFA2DD28 /* CoreTelephony.framework */; };
+		6A3A0F4006903165C202B2C593E04EF7 /* SEGIntegrationsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB56D827ADE0E0311D8A928039C0223 /* SEGIntegrationsManager.m */; };
+		6C6D797E955DE10B1F6616B1CDD08FEF /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B413A3DFF8B99308A0E489A7E97DD279 /* StoreKit.framework */; };
+		6C7294F18F07094D8F933596DB5EF30D /* SEGGroupPayload.h in Headers */ = {isa = PBXBuildFile; fileRef = 380292D68F3F8B5A425AF8BE4194E073 /* SEGGroupPayload.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		70D0A707D25628CFBC6737B7ED48724F /* SEGMiddleware.h in Headers */ = {isa = PBXBuildFile; fileRef = 866A4B5B8C6E20E8D1367A9AF7730A19 /* SEGMiddleware.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7A2E927DD0A51F365BC2F7360C6A0F17 /* SEGIdentifyPayload.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B08443FC767CDCD2F60B17370ACC891 /* SEGIdentifyPayload.m */; };
+		7D5F329D3047CC981666A1E222F376BA /* SEGSegmentIntegration.m in Sources */ = {isa = PBXBuildFile; fileRef = B8ED0F73D189233B4FF2B7FE0610FDBD /* SEGSegmentIntegration.m */; };
+		7D8ED0DF23C01D3357CD48DDDD832002 /* Pods-SegmentBrazeDebounce-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CB3E5EE622D8D04C4F736A5ADE53C93 /* Pods-SegmentBrazeDebounce-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8246F73E4A1615A0B0C8C1D1966A2DA1 /* SEGIdentifyPayload.h in Headers */ = {isa = PBXBuildFile; fileRef = A7648B9EE7B00488772D8DEAAB88DD9C /* SEGIdentifyPayload.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		841E24D0AF5C0B8485576D3C8AB6E2DA /* NSData+SEGGZIP.h in Headers */ = {isa = PBXBuildFile; fileRef = B5C78611F26BEDDBEAAD230613F5676C /* NSData+SEGGZIP.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8EF840205203833009271CB3D0203371 /* SEGCrypto.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E90A735E2E6C0076F5AB605C0ED1C7F /* SEGCrypto.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9165A8F831FB3B66B3AA84678AE3FA6B /* SEGAnalyticsUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 335844C64143087AD3E8C2CE05E96854 /* SEGAnalyticsUtils.m */; };
+		971B0235BF694BA74ED04913804FFFC7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A3A2B34E13D45C9B0A6F11113E9F9D0 /* Foundation.framework */; };
+		9882409BD02AD5D13CB8EEF755EF634E /* SEGHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 78A9FFF0A03749A690B1E35A4512DE08 /* SEGHTTPClient.m */; };
+		9C8540AAD22B061E2190824BF81B54FE /* SEGFileStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 338E8FD0DDFC8DE02C8CC12DAAB8D9CA /* SEGFileStorage.m */; };
+		A0378EF7756C304765F79443ED318C18 /* SEGAES256Crypto.m in Sources */ = {isa = PBXBuildFile; fileRef = 989F58AD5A84DF1BFFBBE2A83A7BC5FA /* SEGAES256Crypto.m */; };
+		A34091E818C633E3C6EFBF269032E502 /* SEGAnalytics.m in Sources */ = {isa = PBXBuildFile; fileRef = A5DC97DA4707EB39BF37FEA37D16E545 /* SEGAnalytics.m */; };
+		A3BED668E2DBD4320704A1B7B281713A /* SEGAliasPayload.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C1649E20CC386DA9F54474AAB8FA0C /* SEGAliasPayload.m */; };
+		B00767D68E0F4B086B2C05C73D1CCE00 /* SEGStoreKitTracker.h in Headers */ = {isa = PBXBuildFile; fileRef = DBCACB085E09127224ECB5A906BB5224 /* SEGStoreKitTracker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B66A21BC2FCA32342E150B093D885611 /* SEGSerializableValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 71E40D0C9EE53B04FA0432B18B018BCE /* SEGSerializableValue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7A1826AEBD6EC83A52D7C5F05FA9B6D /* SEGIntegrationsManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AD823C1F5A86E23ABD2523B57D30C59 /* SEGIntegrationsManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BEBE1C1F0D94383BE93A05EAA8D9B0AB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A3A2B34E13D45C9B0A6F11113E9F9D0 /* Foundation.framework */; };
+		D337266C718308BE5F09F3DEEB14F28E /* SEGStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A2C5B4038BA15046FE733E0CC2F9CC7 /* SEGStorage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D43E9F1E6FF7C40A49A66D76578D97C9 /* SEGSegmentIntegrationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A7EE980DE161B025B6E028FEF35E285 /* SEGSegmentIntegrationFactory.m */; };
+		D5C061257AEDA75EE2457E0BF640F592 /* SEGStoreKitTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 63CEDCDB71969779B8823A6F7AF2CC9E /* SEGStoreKitTracker.m */; };
+		DB35DE82F8EEC8D6E7CCD06B036AA584 /* Analytics-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C973DD4D832A963249DDB608E3D03FD /* Analytics-dummy.m */; };
+		DF806385F573BF037E9C48EA1096964E /* SEGFileStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DB827E69F5BE3C1D6343E2B3F565E6E /* SEGFileStorage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E273D76DE74EA4B69A8271E8758203B1 /* SEGScreenPayload.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B32687C7762BDE171C6055A05984CC9 /* SEGScreenPayload.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EF37AE8AF3CB45FF665F9AEC8332A4BC /* SEGSegmentIntegration.h in Headers */ = {isa = PBXBuildFile; fileRef = 699645C117E4019AE5C707DC77813A80 /* SEGSegmentIntegration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EFA99E6839AC03D94497556D7BAF6602 /* UIViewController+SEGScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 4330132F8E1A5B5D79B174FEE23C5F4A /* UIViewController+SEGScreen.m */; };
+		F414B63167E12864022BF68C218921B5 /* SEGUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = F4541A829E216F6F755CF007A4192F91 /* SEGUtils.m */; };
+		F98F6AE49A69E27062A4EFC8B65183D4 /* Pods-SegmentBrazeDebounce-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 26AD522263EEBA0F8D1F465D46880028 /* Pods-SegmentBrazeDebounce-iOS-dummy.m */; };
+		FCFD5F9D8264C0F4EB7A08EA374696AD /* SEGAES256Crypto.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EEF4DFEDBCA28299AA62F29E9A3AC2D /* SEGAES256Crypto.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FF1F6D65D5B23DD5205AB95D3075765B /* SEGReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = FA91B40A34AFBCD8893D5BFE0ED7AF83 /* SEGReachability.m */; };
+		FF9A923E8488E25804172CBBE68CF809 /* SEGContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 14CB9792AA9896C6FD5323B16B12EB68 /* SEGContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		40D75CA0222CFBCD2640B21C29646B28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8F50A15C556FFEAD343B69C7EA54092F;
+			remoteInfo = Analytics;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0C973DD4D832A963249DDB608E3D03FD /* Analytics-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Analytics-dummy.m"; sourceTree = "<group>"; };
+		13D9386A331592836B87D51E2E6D4997 /* SEGGroupPayload.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SEGGroupPayload.m; path = Analytics/Classes/Integrations/SEGGroupPayload.m; sourceTree = "<group>"; };
+		14CB9792AA9896C6FD5323B16B12EB68 /* SEGContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SEGContext.h; path = Analytics/Classes/Middlewares/SEGContext.h; sourceTree = "<group>"; };
+		18A2098CC29126D6B954FA851F6D5581 /* Pods-SegmentBrazeDebounce-iOS-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SegmentBrazeDebounce-iOS-acknowledgements.plist"; sourceTree = "<group>"; };
+		1A2C5B4038BA15046FE733E0CC2F9CC7 /* SEGStorage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SEGStorage.h; path = Analytics/Classes/Internal/SEGStorage.h; sourceTree = "<group>"; };
+		1A3A2B34E13D45C9B0A6F11113E9F9D0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		1DB827E69F5BE3C1D6343E2B3F565E6E /* SEGFileStorage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SEGFileStorage.h; path = Analytics/Classes/Internal/SEGFileStorage.h; sourceTree = "<group>"; };
+		26AD522263EEBA0F8D1F465D46880028 /* Pods-SegmentBrazeDebounce-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SegmentBrazeDebounce-iOS-dummy.m"; sourceTree = "<group>"; };
+		27096BF49DDE719FDB7EA03040D059BE /* SEGPayload.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SEGPayload.m; path = Analytics/Classes/Integrations/SEGPayload.m; sourceTree = "<group>"; };
+		28083FDECE5DA70970F1AF40001AE2A9 /* Pods-SegmentBrazeDebounce-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SegmentBrazeDebounce-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		2CE4B6165F426953A26419DF02AF0D93 /* Analytics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Analytics.framework; path = Analytics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EEF4DFEDBCA28299AA62F29E9A3AC2D /* SEGAES256Crypto.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SEGAES256Crypto.h; path = Analytics/Classes/Crypto/SEGAES256Crypto.h; sourceTree = "<group>"; };
+		318F6AA3D2C4DA644A5A7EC992B1E35F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		335844C64143087AD3E8C2CE05E96854 /* SEGAnalyticsUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SEGAnalyticsUtils.m; path = Analytics/Classes/Internal/SEGAnalyticsUtils.m; sourceTree = "<group>"; };
+		338E8FD0DDFC8DE02C8CC12DAAB8D9CA /* SEGFileStorage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SEGFileStorage.m; path = Analytics/Classes/Internal/SEGFileStorage.m; sourceTree = "<group>"; };
+		345566619A5D004C6563659CCA363A17 /* SEGIntegrationFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SEGIntegrationFactory.h; path = Analytics/Classes/Integrations/SEGIntegrationFactory.h; sourceTree = "<group>"; };
+		369C165ECED231EDCAA579A7D7C7FBE2 /* SEGReachability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SEGReachability.h; path = Analytics/Vendor/SEGReachability.h; sourceTree = "<group>"; };
+		380292D68F3F8B5A425AF8BE4194E073 /* SEGGroupPayload.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SEGGroupPayload.h; path = Analytics/Classes/Integrations/SEGGroupPayload.h; sourceTree = "<group>"; };
+		3B32687C7762BDE171C6055A05984CC9 /* SEGScreenPayload.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SEGScreenPayload.h; path = Analytics/Classes/Integrations/SEGScreenPayload.h; sourceTree = "<group>"; };
+		3C20A44C448A276DEDEC5216ED55E7D3 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		3CA2D51246B4269C3683C0B0C8065016 /* Pods-SegmentBrazeDebounce-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SegmentBrazeDebounce-iOS.modulemap"; sourceTree = "<group>"; };
+		42C1E387CF7A8508C58900F94D7F869C /* NSData+SEGGZIP.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+SEGGZIP.m"; path = "Analytics/Classes/Internal/NSData+SEGGZIP.m"; sourceTree = "<group>"; };
+		4330132F8E1A5B5D79B174FEE23C5F4A /* UIViewController+SEGScreen.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+SEGScreen.m"; path = "Analytics/Classes/Internal/UIViewController+SEGScreen.m"; sourceTree = "<group>"; };
+		47A716193124E2CE02C202CF05B837C1 /* SEGTrackPayload.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SEGTrackPayload.m; path = Analytics/Classes/Integrations/SEGTrackPayload.m; sourceTree = "<group>"; };
+		48F2096D264F3D04E770130196D30DD5 /* SEGUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SEGUtils.h; path = Analytics/Classes/Internal/SEGUtils.h; sourceTree = "<group>"; };
+		4A7EE980DE161B025B6E028FEF35E285 /* SEGSegmentIntegrationFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SEGSegmentIntegrationFactory.m; path = Analytics/Classes/Internal/SEGSegmentIntegrationFactory.m; sourceTree = "<group>"; };
+		4AD823C1F5A86E23ABD2523B57D30C59 /* SEGIntegrationsManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SEGIntegrationsManager.h; path = Analytics/Classes/Integrations/SEGIntegrationsManager.h; sourceTree = "<group>"; };
+		58FECC2633AFD63B720D0318E152209D /* Pods_SegmentBrazeDebounce_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SegmentBrazeDebounce_iOS.framework; path = "Pods-SegmentBrazeDebounce-iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AB56D827ADE0E0311D8A928039C0223 /* SEGIntegrationsManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SEGIntegrationsManager.m; path = Analytics/Classes/Integrations/SEGIntegrationsManager.m; sourceTree = "<group>"; };
+		5B0970BD7636C76890A20414955C5854 /* SEGAnalyticsConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SEGAnalyticsConfiguration.h; path = Analytics/Classes/SEGAnalyticsConfiguration.h; sourceTree = "<group>"; };
+		5CB3E5EE622D8D04C4F736A5ADE53C93 /* Pods-SegmentBrazeDebounce-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SegmentBrazeDebounce-iOS-umbrella.h"; sourceTree = "<group>"; };
+		60B865167B1EE301CA8D422701E641D5 /* SEGAnalytics.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SEGAnalytics.h; path = Analytics/Classes/SEGAnalytics.h; sourceTree = "<group>"; };
+		6159F1B1594ABD631254F1FCC3F5375C /* SEGAliasPayload.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SEGAliasPayload.h; path = Analytics/Classes/Integrations/SEGAliasPayload.h; sourceTree = "<group>"; };
+		63CEDCDB71969779B8823A6F7AF2CC9E /* SEGStoreKitTracker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SEGStoreKitTracker.m; path = Analytics/Classes/Internal/SEGStoreKitTracker.m; sourceTree = "<group>"; };
+		699645C117E4019AE5C707DC77813A80 /* SEGSegmentIntegration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SEGSegmentIntegration.h; path = Analytics/Classes/Internal/SEGSegmentIntegration.h; sourceTree = "<group>"; };
+		6A032883B507D57D411E8BC89AA13F38 /* SEGMiddleware.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SEGMiddleware.m; path = Analytics/Classes/Middlewares/SEGMiddleware.m; sourceTree = "<group>"; };
+		6CB719FBA354FFFEA0B4493F39F5C54D /* SEGSegmentIntegrationFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SEGSegmentIntegrationFactory.h; path = Analytics/Classes/Internal/SEGSegmentIntegrationFactory.h; sourceTree = "<group>"; };
+		6FD00D1D3FBB6D650D45ED08AFA2DD28 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreTelephony.framework; sourceTree = DEVELOPER_DIR; };
+		71E40D0C9EE53B04FA0432B18B018BCE /* SEGSerializableValue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SEGSerializableValue.h; path = Analytics/Classes/SEGSerializableValue.h; sourceTree = "<group>"; };
+		78A9FFF0A03749A690B1E35A4512DE08 /* SEGHTTPClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SEGHTTPClient.m; path = Analytics/Classes/Internal/SEGHTTPClient.m; sourceTree = "<group>"; };
+		7A351DEBE800422A35DFACFE2DF31ABD /* Pods-SegmentBrazeDebounce-iOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SegmentBrazeDebounce-iOS-Info.plist"; sourceTree = "<group>"; };
+		866A4B5B8C6E20E8D1367A9AF7730A19 /* SEGMiddleware.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SEGMiddleware.h; path = Analytics/Classes/Middlewares/SEGMiddleware.h; sourceTree = "<group>"; };
+		8E8AAAEEF8F8D9EF695A69AB07981181 /* SEGHTTPClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SEGHTTPClient.h; path = Analytics/Classes/Internal/SEGHTTPClient.h; sourceTree = "<group>"; };
+		8E90A735E2E6C0076F5AB605C0ED1C7F /* SEGCrypto.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SEGCrypto.h; path = Analytics/Classes/Crypto/SEGCrypto.h; sourceTree = "<group>"; };
+		94181C031F51E963EB4FB82906120D25 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		989F58AD5A84DF1BFFBBE2A83A7BC5FA /* SEGAES256Crypto.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SEGAES256Crypto.m; path = Analytics/Classes/Crypto/SEGAES256Crypto.m; sourceTree = "<group>"; };
+		9B08443FC767CDCD2F60B17370ACC891 /* SEGIdentifyPayload.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SEGIdentifyPayload.m; path = Analytics/Classes/Integrations/SEGIdentifyPayload.m; sourceTree = "<group>"; };
+		9B1978BB9E2E25DF76676D5D4F27830F /* SEGIntegration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SEGIntegration.h; path = Analytics/Classes/Integrations/SEGIntegration.h; sourceTree = "<group>"; };
+		9BC6B4155DE5D79D2626DD269C4D89AE /* Pods-SegmentBrazeDebounce-iOS-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SegmentBrazeDebounce-iOS-frameworks.sh"; sourceTree = "<group>"; };
+		9CA92B99D24B6D3415C9DB103BB7EC5A /* Analytics-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Analytics-umbrella.h"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9F033A79C0537CF3DA1DBDCFD3FB82CA /* Pods-SegmentBrazeDebounce-iOS-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SegmentBrazeDebounce-iOS-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A140AC67269E2C07304DDB11BF8D16FA /* Analytics.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Analytics.xcconfig; sourceTree = "<group>"; };
+		A5DC97DA4707EB39BF37FEA37D16E545 /* SEGAnalytics.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SEGAnalytics.m; path = Analytics/Classes/SEGAnalytics.m; sourceTree = "<group>"; };
+		A7648B9EE7B00488772D8DEAAB88DD9C /* SEGIdentifyPayload.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SEGIdentifyPayload.h; path = Analytics/Classes/Integrations/SEGIdentifyPayload.h; sourceTree = "<group>"; };
+		AFFF3C21A91C7C54BC1120802D1ED602 /* SEGContext.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SEGContext.m; path = Analytics/Classes/Middlewares/SEGContext.m; sourceTree = "<group>"; };
+		B0A1D5CC06B45016F36123EFB9A07B5C /* SEGAnalyticsConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SEGAnalyticsConfiguration.m; path = Analytics/Classes/SEGAnalyticsConfiguration.m; sourceTree = "<group>"; };
+		B413A3DFF8B99308A0E489A7E97DD279 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/StoreKit.framework; sourceTree = DEVELOPER_DIR; };
+		B5C78611F26BEDDBEAAD230613F5676C /* NSData+SEGGZIP.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+SEGGZIP.h"; path = "Analytics/Classes/Internal/NSData+SEGGZIP.h"; sourceTree = "<group>"; };
+		B8ED0F73D189233B4FF2B7FE0610FDBD /* SEGSegmentIntegration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SEGSegmentIntegration.m; path = Analytics/Classes/Internal/SEGSegmentIntegration.m; sourceTree = "<group>"; };
+		B9EDD2CA89E4F5F69397C36593532E97 /* Analytics.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Analytics.modulemap; sourceTree = "<group>"; };
+		BB2DA87DD4F4B649404213F4A67ED30F /* UIViewController+SEGScreen.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+SEGScreen.h"; path = "Analytics/Classes/Internal/UIViewController+SEGScreen.h"; sourceTree = "<group>"; };
+		BBCF8CDCD94821529B1B754E4F0F0D2E /* SEGUserDefaultsStorage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SEGUserDefaultsStorage.m; path = Analytics/Classes/Internal/SEGUserDefaultsStorage.m; sourceTree = "<group>"; };
+		D17C8638B542464897B3A6738543AE78 /* Pods-SegmentBrazeDebounce-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SegmentBrazeDebounce-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		D543FA4134A323E72BA6DE3DB803A5A0 /* SEGAnalyticsUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SEGAnalyticsUtils.h; path = Analytics/Classes/Internal/SEGAnalyticsUtils.h; sourceTree = "<group>"; };
+		D5AB67E476B2FB9BBB94F7D3BF6EDC0B /* SEGScreenPayload.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SEGScreenPayload.m; path = Analytics/Classes/Integrations/SEGScreenPayload.m; sourceTree = "<group>"; };
+		DBCACB085E09127224ECB5A906BB5224 /* SEGStoreKitTracker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SEGStoreKitTracker.h; path = Analytics/Classes/Internal/SEGStoreKitTracker.h; sourceTree = "<group>"; };
+		E3AA3D865742724AB7BC23BE4732A052 /* Analytics-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Analytics-prefix.pch"; sourceTree = "<group>"; };
+		F4541A829E216F6F755CF007A4192F91 /* SEGUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SEGUtils.m; path = Analytics/Classes/Internal/SEGUtils.m; sourceTree = "<group>"; };
+		F516FB1FCB19250D2BB9ED3446E9CF79 /* SEGTrackPayload.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SEGTrackPayload.h; path = Analytics/Classes/Integrations/SEGTrackPayload.h; sourceTree = "<group>"; };
+		F590E75CC695DD3EDB285A5C9FC8D220 /* SEGPayload.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SEGPayload.h; path = Analytics/Classes/Integrations/SEGPayload.h; sourceTree = "<group>"; };
+		F8C1649E20CC386DA9F54474AAB8FA0C /* SEGAliasPayload.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SEGAliasPayload.m; path = Analytics/Classes/Integrations/SEGAliasPayload.m; sourceTree = "<group>"; };
+		FA91B40A34AFBCD8893D5BFE0ED7AF83 /* SEGReachability.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SEGReachability.m; path = Analytics/Vendor/SEGReachability.m; sourceTree = "<group>"; };
+		FB100F327FDDDAC465C048FAE6BF58E1 /* Analytics-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Analytics-Info.plist"; sourceTree = "<group>"; };
+		FF26D42BAC51435CB00A709D50C2C3D9 /* SEGUserDefaultsStorage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SEGUserDefaultsStorage.h; path = Analytics/Classes/Internal/SEGUserDefaultsStorage.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B6B072B716D7C649CF66B880A23D04F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEBE1C1F0D94383BE93A05EAA8D9B0AB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5E5EE71306D070FC1DD6FC2106A6E27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6767276328F17625D08771C5E730C069 /* CoreTelephony.framework in Frameworks */,
+				971B0235BF694BA74ED04913804FFFC7 /* Foundation.framework in Frameworks */,
+				58D8EB1CA8AA5E01E40ABD8DE806AF48 /* Security.framework in Frameworks */,
+				6C6D797E955DE10B1F6616B1CDD08FEF /* StoreKit.framework in Frameworks */,
+				3003F28FE9B73C33CDEC4EA8AD92662C /* SystemConfiguration.framework in Frameworks */,
+				0324BCE792BBCEAA7D89814C71A7CF62 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14A88204B5C11BF9CE11F2E359AE08AD /* Pods-SegmentBrazeDebounce-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3CA2D51246B4269C3683C0B0C8065016 /* Pods-SegmentBrazeDebounce-iOS.modulemap */,
+				9F033A79C0537CF3DA1DBDCFD3FB82CA /* Pods-SegmentBrazeDebounce-iOS-acknowledgements.markdown */,
+				18A2098CC29126D6B954FA851F6D5581 /* Pods-SegmentBrazeDebounce-iOS-acknowledgements.plist */,
+				26AD522263EEBA0F8D1F465D46880028 /* Pods-SegmentBrazeDebounce-iOS-dummy.m */,
+				9BC6B4155DE5D79D2626DD269C4D89AE /* Pods-SegmentBrazeDebounce-iOS-frameworks.sh */,
+				7A351DEBE800422A35DFACFE2DF31ABD /* Pods-SegmentBrazeDebounce-iOS-Info.plist */,
+				5CB3E5EE622D8D04C4F736A5ADE53C93 /* Pods-SegmentBrazeDebounce-iOS-umbrella.h */,
+				D17C8638B542464897B3A6738543AE78 /* Pods-SegmentBrazeDebounce-iOS.debug.xcconfig */,
+				28083FDECE5DA70970F1AF40001AE2A9 /* Pods-SegmentBrazeDebounce-iOS.release.xcconfig */,
+			);
+			name = "Pods-SegmentBrazeDebounce-iOS";
+			path = "Target Support Files/Pods-SegmentBrazeDebounce-iOS";
+			sourceTree = "<group>";
+		};
+		361095B8772DB01C4A29EE30CFD2195A /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6FD00D1D3FBB6D650D45ED08AFA2DD28 /* CoreTelephony.framework */,
+				1A3A2B34E13D45C9B0A6F11113E9F9D0 /* Foundation.framework */,
+				3C20A44C448A276DEDEC5216ED55E7D3 /* Security.framework */,
+				B413A3DFF8B99308A0E489A7E97DD279 /* StoreKit.framework */,
+				94181C031F51E963EB4FB82906120D25 /* SystemConfiguration.framework */,
+				318F6AA3D2C4DA644A5A7EC992B1E35F /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		3E67121D5917CFA65C33D10779860F0F /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				14A88204B5C11BF9CE11F2E359AE08AD /* Pods-SegmentBrazeDebounce-iOS */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		4F1BBB1BF05082888E0D1AF6F7335110 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2CE4B6165F426953A26419DF02AF0D93 /* Analytics.framework */,
+				58FECC2633AFD63B720D0318E152209D /* Pods_SegmentBrazeDebounce_iOS.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9F88C37199192554E1E2AE621D7A1C9E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BF0C80E52632CE9C0F82DAEF536570D0 /* Analytics */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BF0C80E52632CE9C0F82DAEF536570D0 /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				B5C78611F26BEDDBEAAD230613F5676C /* NSData+SEGGZIP.h */,
+				42C1E387CF7A8508C58900F94D7F869C /* NSData+SEGGZIP.m */,
+				2EEF4DFEDBCA28299AA62F29E9A3AC2D /* SEGAES256Crypto.h */,
+				989F58AD5A84DF1BFFBBE2A83A7BC5FA /* SEGAES256Crypto.m */,
+				6159F1B1594ABD631254F1FCC3F5375C /* SEGAliasPayload.h */,
+				F8C1649E20CC386DA9F54474AAB8FA0C /* SEGAliasPayload.m */,
+				60B865167B1EE301CA8D422701E641D5 /* SEGAnalytics.h */,
+				A5DC97DA4707EB39BF37FEA37D16E545 /* SEGAnalytics.m */,
+				5B0970BD7636C76890A20414955C5854 /* SEGAnalyticsConfiguration.h */,
+				B0A1D5CC06B45016F36123EFB9A07B5C /* SEGAnalyticsConfiguration.m */,
+				D543FA4134A323E72BA6DE3DB803A5A0 /* SEGAnalyticsUtils.h */,
+				335844C64143087AD3E8C2CE05E96854 /* SEGAnalyticsUtils.m */,
+				14CB9792AA9896C6FD5323B16B12EB68 /* SEGContext.h */,
+				AFFF3C21A91C7C54BC1120802D1ED602 /* SEGContext.m */,
+				8E90A735E2E6C0076F5AB605C0ED1C7F /* SEGCrypto.h */,
+				1DB827E69F5BE3C1D6343E2B3F565E6E /* SEGFileStorage.h */,
+				338E8FD0DDFC8DE02C8CC12DAAB8D9CA /* SEGFileStorage.m */,
+				380292D68F3F8B5A425AF8BE4194E073 /* SEGGroupPayload.h */,
+				13D9386A331592836B87D51E2E6D4997 /* SEGGroupPayload.m */,
+				8E8AAAEEF8F8D9EF695A69AB07981181 /* SEGHTTPClient.h */,
+				78A9FFF0A03749A690B1E35A4512DE08 /* SEGHTTPClient.m */,
+				A7648B9EE7B00488772D8DEAAB88DD9C /* SEGIdentifyPayload.h */,
+				9B08443FC767CDCD2F60B17370ACC891 /* SEGIdentifyPayload.m */,
+				9B1978BB9E2E25DF76676D5D4F27830F /* SEGIntegration.h */,
+				345566619A5D004C6563659CCA363A17 /* SEGIntegrationFactory.h */,
+				4AD823C1F5A86E23ABD2523B57D30C59 /* SEGIntegrationsManager.h */,
+				5AB56D827ADE0E0311D8A928039C0223 /* SEGIntegrationsManager.m */,
+				866A4B5B8C6E20E8D1367A9AF7730A19 /* SEGMiddleware.h */,
+				6A032883B507D57D411E8BC89AA13F38 /* SEGMiddleware.m */,
+				F590E75CC695DD3EDB285A5C9FC8D220 /* SEGPayload.h */,
+				27096BF49DDE719FDB7EA03040D059BE /* SEGPayload.m */,
+				369C165ECED231EDCAA579A7D7C7FBE2 /* SEGReachability.h */,
+				FA91B40A34AFBCD8893D5BFE0ED7AF83 /* SEGReachability.m */,
+				3B32687C7762BDE171C6055A05984CC9 /* SEGScreenPayload.h */,
+				D5AB67E476B2FB9BBB94F7D3BF6EDC0B /* SEGScreenPayload.m */,
+				699645C117E4019AE5C707DC77813A80 /* SEGSegmentIntegration.h */,
+				B8ED0F73D189233B4FF2B7FE0610FDBD /* SEGSegmentIntegration.m */,
+				6CB719FBA354FFFEA0B4493F39F5C54D /* SEGSegmentIntegrationFactory.h */,
+				4A7EE980DE161B025B6E028FEF35E285 /* SEGSegmentIntegrationFactory.m */,
+				71E40D0C9EE53B04FA0432B18B018BCE /* SEGSerializableValue.h */,
+				1A2C5B4038BA15046FE733E0CC2F9CC7 /* SEGStorage.h */,
+				DBCACB085E09127224ECB5A906BB5224 /* SEGStoreKitTracker.h */,
+				63CEDCDB71969779B8823A6F7AF2CC9E /* SEGStoreKitTracker.m */,
+				F516FB1FCB19250D2BB9ED3446E9CF79 /* SEGTrackPayload.h */,
+				47A716193124E2CE02C202CF05B837C1 /* SEGTrackPayload.m */,
+				FF26D42BAC51435CB00A709D50C2C3D9 /* SEGUserDefaultsStorage.h */,
+				BBCF8CDCD94821529B1B754E4F0F0D2E /* SEGUserDefaultsStorage.m */,
+				48F2096D264F3D04E770130196D30DD5 /* SEGUtils.h */,
+				F4541A829E216F6F755CF007A4192F91 /* SEGUtils.m */,
+				BB2DA87DD4F4B649404213F4A67ED30F /* UIViewController+SEGScreen.h */,
+				4330132F8E1A5B5D79B174FEE23C5F4A /* UIViewController+SEGScreen.m */,
+				E6A2CE4F0EDAC0A45B8C0E6C4538E4A1 /* Support Files */,
+			);
+			name = Analytics;
+			path = Analytics;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D68CA58901FBF589D75F5E40F1EAF5BA /* Frameworks */,
+				9F88C37199192554E1E2AE621D7A1C9E /* Pods */,
+				4F1BBB1BF05082888E0D1AF6F7335110 /* Products */,
+				3E67121D5917CFA65C33D10779860F0F /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D68CA58901FBF589D75F5E40F1EAF5BA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				361095B8772DB01C4A29EE30CFD2195A /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E6A2CE4F0EDAC0A45B8C0E6C4538E4A1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B9EDD2CA89E4F5F69397C36593532E97 /* Analytics.modulemap */,
+				A140AC67269E2C07304DDB11BF8D16FA /* Analytics.xcconfig */,
+				0C973DD4D832A963249DDB608E3D03FD /* Analytics-dummy.m */,
+				FB100F327FDDDAC465C048FAE6BF58E1 /* Analytics-Info.plist */,
+				E3AA3D865742724AB7BC23BE4732A052 /* Analytics-prefix.pch */,
+				9CA92B99D24B6D3415C9DB103BB7EC5A /* Analytics-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Analytics";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0EB722201337BCFCE6722E97986AF092 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CBFBFAB3A2CBB46CB1CE442E7A03C84 /* Analytics-umbrella.h in Headers */,
+				841E24D0AF5C0B8485576D3C8AB6E2DA /* NSData+SEGGZIP.h in Headers */,
+				FCFD5F9D8264C0F4EB7A08EA374696AD /* SEGAES256Crypto.h in Headers */,
+				61268F0616C261A1516729CFA4ABF10E /* SEGAliasPayload.h in Headers */,
+				4630C5C9C6454B7354B2DDC4C061FC72 /* SEGAnalytics.h in Headers */,
+				261E61B46FAE966287387E6151CDCA61 /* SEGAnalyticsConfiguration.h in Headers */,
+				288538A74C9C2BF5FE023932C9AAAAD2 /* SEGAnalyticsUtils.h in Headers */,
+				FF9A923E8488E25804172CBBE68CF809 /* SEGContext.h in Headers */,
+				8EF840205203833009271CB3D0203371 /* SEGCrypto.h in Headers */,
+				DF806385F573BF037E9C48EA1096964E /* SEGFileStorage.h in Headers */,
+				6C7294F18F07094D8F933596DB5EF30D /* SEGGroupPayload.h in Headers */,
+				5D39E99AA122E44AE78B9D15C0A1D71F /* SEGHTTPClient.h in Headers */,
+				8246F73E4A1615A0B0C8C1D1966A2DA1 /* SEGIdentifyPayload.h in Headers */,
+				1D998FA81A7384756482F055619879D8 /* SEGIntegration.h in Headers */,
+				3C82DFB36EC0432629A2BD33180E83F9 /* SEGIntegrationFactory.h in Headers */,
+				B7A1826AEBD6EC83A52D7C5F05FA9B6D /* SEGIntegrationsManager.h in Headers */,
+				70D0A707D25628CFBC6737B7ED48724F /* SEGMiddleware.h in Headers */,
+				2100B6C6064764844E170B166B2BEBCF /* SEGPayload.h in Headers */,
+				580F8FEBCC0AB691D807790DD255BE56 /* SEGReachability.h in Headers */,
+				E273D76DE74EA4B69A8271E8758203B1 /* SEGScreenPayload.h in Headers */,
+				EF37AE8AF3CB45FF665F9AEC8332A4BC /* SEGSegmentIntegration.h in Headers */,
+				016DEFC011D48933CE608CD77C226BCB /* SEGSegmentIntegrationFactory.h in Headers */,
+				B66A21BC2FCA32342E150B093D885611 /* SEGSerializableValue.h in Headers */,
+				D337266C718308BE5F09F3DEEB14F28E /* SEGStorage.h in Headers */,
+				B00767D68E0F4B086B2C05C73D1CCE00 /* SEGStoreKitTracker.h in Headers */,
+				2A27ECC7375D7A60FB349D1DEF97D209 /* SEGTrackPayload.h in Headers */,
+				1771FB5831C64D1663848033A4F7164B /* SEGUserDefaultsStorage.h in Headers */,
+				39DE7EFA0BAD588A3607B69C46778B22 /* SEGUtils.h in Headers */,
+				16AC0D40B9B6CD6B8B6E8B1A46A10984 /* UIViewController+SEGScreen.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1516AA6DC2128271D8E4D0008F8D9D70 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D8ED0DF23C01D3357CD48DDDD832002 /* Pods-SegmentBrazeDebounce-iOS-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8F50A15C556FFEAD343B69C7EA54092F /* Analytics */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C4BDC6EA66D66C68793C05FF5746992 /* Build configuration list for PBXNativeTarget "Analytics" */;
+			buildPhases = (
+				0EB722201337BCFCE6722E97986AF092 /* Headers */,
+				0FB7E00CCF1FC58DF6D50B846D4EED11 /* Sources */,
+				D5E5EE71306D070FC1DD6FC2106A6E27 /* Frameworks */,
+				D896E0845EA59D41527E9BBE12496766 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Analytics;
+			productName = Analytics;
+			productReference = 2CE4B6165F426953A26419DF02AF0D93 /* Analytics.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BE6DC88656B795D73CAE92A3D9F1DB7D /* Pods-SegmentBrazeDebounce-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE5C0B6AFC2A8AEB9E68B2D26178DF52 /* Build configuration list for PBXNativeTarget "Pods-SegmentBrazeDebounce-iOS" */;
+			buildPhases = (
+				1516AA6DC2128271D8E4D0008F8D9D70 /* Headers */,
+				7306933BC1B952864525F6E0B419DC4F /* Sources */,
+				B6B072B716D7C649CF66B880A23D04F7 /* Frameworks */,
+				10D8CE54D9B788BB61D5E2E52B7ABA35 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1721C529AEEA2D913231C75B9A5C7583 /* PBXTargetDependency */,
+			);
+			name = "Pods-SegmentBrazeDebounce-iOS";
+			productName = "Pods-SegmentBrazeDebounce-iOS";
+			productReference = 58FECC2633AFD63B720D0318E152209D /* Pods_SegmentBrazeDebounce_iOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 4F1BBB1BF05082888E0D1AF6F7335110 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8F50A15C556FFEAD343B69C7EA54092F /* Analytics */,
+				BE6DC88656B795D73CAE92A3D9F1DB7D /* Pods-SegmentBrazeDebounce-iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		10D8CE54D9B788BB61D5E2E52B7ABA35 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D896E0845EA59D41527E9BBE12496766 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0FB7E00CCF1FC58DF6D50B846D4EED11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB35DE82F8EEC8D6E7CCD06B036AA584 /* Analytics-dummy.m in Sources */,
+				23CDE292C19FE144F63D5ABAE26E7E86 /* NSData+SEGGZIP.m in Sources */,
+				A0378EF7756C304765F79443ED318C18 /* SEGAES256Crypto.m in Sources */,
+				A3BED668E2DBD4320704A1B7B281713A /* SEGAliasPayload.m in Sources */,
+				A34091E818C633E3C6EFBF269032E502 /* SEGAnalytics.m in Sources */,
+				26C797F478AD450003AF011115A5E697 /* SEGAnalyticsConfiguration.m in Sources */,
+				9165A8F831FB3B66B3AA84678AE3FA6B /* SEGAnalyticsUtils.m in Sources */,
+				19C5F4992EAD9CFF33ADC4D741865AFC /* SEGContext.m in Sources */,
+				9C8540AAD22B061E2190824BF81B54FE /* SEGFileStorage.m in Sources */,
+				57FBFF6B31A9CA5846AAAC0D3C9EC059 /* SEGGroupPayload.m in Sources */,
+				9882409BD02AD5D13CB8EEF755EF634E /* SEGHTTPClient.m in Sources */,
+				7A2E927DD0A51F365BC2F7360C6A0F17 /* SEGIdentifyPayload.m in Sources */,
+				6A3A0F4006903165C202B2C593E04EF7 /* SEGIntegrationsManager.m in Sources */,
+				41F3A47D2A6F7FBD88A1CBCCC47A769E /* SEGMiddleware.m in Sources */,
+				5894C6ED52D0C1DC487795734230EC72 /* SEGPayload.m in Sources */,
+				FF1F6D65D5B23DD5205AB95D3075765B /* SEGReachability.m in Sources */,
+				58E7E64422D87B75C174BCE2F2C01C73 /* SEGScreenPayload.m in Sources */,
+				7D5F329D3047CC981666A1E222F376BA /* SEGSegmentIntegration.m in Sources */,
+				D43E9F1E6FF7C40A49A66D76578D97C9 /* SEGSegmentIntegrationFactory.m in Sources */,
+				D5C061257AEDA75EE2457E0BF640F592 /* SEGStoreKitTracker.m in Sources */,
+				2787BC674AD9478982563FF0D05A471A /* SEGTrackPayload.m in Sources */,
+				56BA6C4555ABD4638DBE2C12EBFF2A2C /* SEGUserDefaultsStorage.m in Sources */,
+				F414B63167E12864022BF68C218921B5 /* SEGUtils.m in Sources */,
+				EFA99E6839AC03D94497556D7BAF6602 /* UIViewController+SEGScreen.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7306933BC1B952864525F6E0B419DC4F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F98F6AE49A69E27062A4EFC8B65183D4 /* Pods-SegmentBrazeDebounce-iOS-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1721C529AEEA2D913231C75B9A5C7583 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Analytics;
+			target = 8F50A15C556FFEAD343B69C7EA54092F /* Analytics */;
+			targetProxy = 40D75CA0222CFBCD2640B21C29646B28 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		24B9963A9CEA76E2F3E043DC3B107B95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D17C8638B542464897B3A6738543AE78 /* Pods-SegmentBrazeDebounce-iOS.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SegmentBrazeDebounce-iOS/Pods-SegmentBrazeDebounce-iOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SegmentBrazeDebounce-iOS/Pods-SegmentBrazeDebounce-iOS.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		33E3FB417FB463309505450A44A00863 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A140AC67269E2C07304DDB11BF8D16FA /* Analytics.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Analytics/Analytics-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Analytics/Analytics-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Analytics/Analytics.modulemap";
+				PRODUCT_MODULE_NAME = Analytics;
+				PRODUCT_NAME = Analytics;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		510B057D2E9F059C50D52DA5D90F3ACF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		584E9DE784F2AA288AB1D1FC602D9DDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28083FDECE5DA70970F1AF40001AE2A9 /* Pods-SegmentBrazeDebounce-iOS.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SegmentBrazeDebounce-iOS/Pods-SegmentBrazeDebounce-iOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SegmentBrazeDebounce-iOS/Pods-SegmentBrazeDebounce-iOS.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		804E13245C9FBBE6A340C555CA8B2B4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		CB994726F7EE0A6EE0CC4DAB2285E938 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A140AC67269E2C07304DDB11BF8D16FA /* Analytics.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Analytics/Analytics-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Analytics/Analytics-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Analytics/Analytics.modulemap";
+				PRODUCT_MODULE_NAME = Analytics;
+				PRODUCT_NAME = Analytics;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1C4BDC6EA66D66C68793C05FF5746992 /* Build configuration list for PBXNativeTarget "Analytics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33E3FB417FB463309505450A44A00863 /* Debug */,
+				CB994726F7EE0A6EE0CC4DAB2285E938 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				804E13245C9FBBE6A340C555CA8B2B4C /* Debug */,
+				510B057D2E9F059C50D52DA5D90F3ACF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE5C0B6AFC2A8AEB9E68B2D26178DF52 /* Build configuration list for PBXNativeTarget "Pods-SegmentBrazeDebounce-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24B9963A9CEA76E2F3E043DC3B107B95 /* Debug */,
+				584E9DE784F2AA288AB1D1FC602D9DDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
