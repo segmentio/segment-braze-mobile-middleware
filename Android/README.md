@@ -1,4 +1,4 @@
-# Segment<>Braze Middleware / iOS / Swift
+# Segment<>Braze Middleware / Android / Java
 
 ## Integration
 To integrate this middleware under a Swift project please follow these steps:
