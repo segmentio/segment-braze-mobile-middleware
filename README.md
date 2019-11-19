@@ -1,9 +1,15 @@
-# SegmentBrazeDebounce-examples
-Examples of how to implement Braze debounce for Analytics.js, iOS and Android
+# Segment<>Braze Middleware
 
-# Why is Debounce needed?
+Official repository explaining the `Braze Debounce Identify()` functionality for customers using both products via direct Segment integration. This codebase is only required and maintained for mobile SDK (iOS+Android). For `analytics.js` you can directly similar functionality via [source settings](https://app.segment.com).
+
+# What are middlewares?
+Middlewares are a powerful mechanism that can augment the events collected by the SDK. A middleware is a simple function that is invoked by the Segment SDK and can be used to monitor, modify or reject events. They are available under both analytics-{ [ios](https://segment.com/docs/sources/mobile/ios/#middlewares) | [android](https://segment.com/docs/sources/mobile/android/#middlewares)}
+
+# Why was this Braze middleware built?
+Segment customers are not charged for duplicate `identify()` calls hence default client app and Segment SDK behavior is to aggresively call this endpoint. Braze on the other hand is priced such that customers are charged per data point stored (incuding duplicates). To help customers avoid overage, this middleware was built for customers to avoid sending duplicate user traits to Braze on every `identify()` call inside Segment.
 
 # Pseudo-code logic of Debounce
+The core functionality that this middleware adds can be explained using the following pseudo-code:
 
 ```
 if payload is IdentityPayload {
@@ -17,57 +23,11 @@ if payload is IdentityPayload {
 }
 ```
 
-# Swift Usage Example
-
-Copy `BrazeDebounceMiddleware.swift` to your Application's source foler and add it to your project.  This middleware will live in and ship with your app.  
-
-Once you've done this, add the following to your SEGConfiguration setup (likely in `AppDelegate.swift`):
-
-```
-// enable our de-bounce middleware
-config.middlewares = [BrazeDebounceMiddleware()]
-```
-
-# Objective-C Usage Example
-
-Copy `BrazeDebounceMiddleware.h` and `BrazeDebounceMiddleware.m` to your Application's source folder and add the to your project.  This middleware will live in and ship with your app.
-
-Once you've done this, add the following to your SEGConfiguration setup (likely in `AppDelegate.m`):
-
-```
-// enable our de-bounce middleware
-config.middlewares = @[[[BrazeDebounceMiddleware alloc] init]];
-```
-
-# Android Usage Example
-
-Copy `BrazeDebounceMiddleware.java` to your Application's source folder and add the to your project.  This middleware will live in and ship with your app.
-
-Once you've done this, add the following to your Analytics setup (likely in your custom `Application` class):
-
-```
-// Enable our de-bounce middleware
-.middleware(new BrazeDebounceMiddleware())
-```
-
-At this point you should have something that closely resembles this:
-
-```
-// Create an analytics client with the given context and Segment write key.
-Analytics analytics = new Analytics.Builder(this, "ZsjbER8OlDJIuD2JlQdfDHKRP3nJYMEu")
-        // Enable this to record certain application events automatically!
-        .trackApplicationLifecycleEvents()
-        // Enable this to record screen views automatically!
-        .recordScreenViews()
-        .flushQueueSize(1)
-        // Enable our de-bounce middleware
-        .middleware(new BrazeDebounceMiddleware())
-        .build();
-```
-
-# Verification
-
-Looking at the Segment debugger for your source (iOS/Android), Select an `IDENTIFY` event and switch to the `Raw` view.  If de-bounce was applied, you'll be able to see a key in the payload called `integrations` which has an entry `Appboy` that is set to false.  This will instruct segment to NOT send this event to Appboy.
+# How to add this?
+You can follow our platform specific guides to help you add this middleware to your native mobile projects:
+1. [Android]()
+2. [iOS/Swift]()
+3. [iOS/Objective-C]()
 
 # More information
 
