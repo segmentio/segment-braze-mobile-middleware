@@ -1,6 +1,6 @@
 # Segment<>Braze Middleware
 
-Official repository explaining the `Braze Debounce Identify()` functionality for customers using both products via direct Segment integration. This codebase is only required and maintained for mobile SDK (iOS+Android). For `analytics.js` you can directly similar functionality via [source settings](https://app.segment.com).
+Official repository explaining the `Braze Debounce Identify()` functionality for customers using both products via direct Segment integration. This codebase is only required and maintained for mobile SDK (iOS+Android). For `analytics.js` you can directly access similar functionality via [source settings](https://app.segment.com). This contains all the necessary code needed to enable Braze Debounce Identify on mobile client in addition to sample apps to help get you started on (iOS)[/iOS/] and (Android)[/Android/].
 
 ## What are middlewares?
 Middlewares are a powerful mechanism that can augment the events collected by the SDK. A middleware is a simple function that is invoked by the Segment SDK and can be used to monitor, modify or reject events. They are available under both analytics-{ [ios](https://segment.com/docs/sources/mobile/ios/#middlewares) | [android](https://segment.com/docs/sources/mobile/android/#middlewares) }

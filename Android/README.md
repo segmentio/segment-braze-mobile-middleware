@@ -25,5 +25,8 @@ Analytics analytics = new Analytics.Builder(this, "ZsjbER8OlDJIuD2JlQdfDHKRP3nJY
         .build();
 ```
 
+## Sample App
+A sample Swift app leveraging this middleware can be seen [here](/iOS/Android/).
+
 ## Verification
 Looking at the Segment debugger for your source (Android), Select an `IDENTIFY` event and switch to the `Raw` view.  If de-bounce was applied, you'll be able to see a key in the payload called `integrations` which has an entry `Appboy` that is set to false.  This will instruct segment to NOT send this event to Appboy.
