@@ -7,7 +7,6 @@ To integrate this middleware under a Swift project please follow these steps:
 1. Copy [`BrazeDebounceMiddleware.h`](/iOS/Objective-C/SegmentBrazeDebounce-iOS/BrazeDebounceMiddleware.h) and [`BrazeDebounceMiddleware.m`](/iOS/Objective-C/SegmentBrazeDebounce-iOS/BrazeDebounceMiddleware.m) to your Application's source folder and add the to your project.  This middleware will live in and ship with your app.
 
 2. Add the following to your SEGConfiguration setup (likely in `AppDelegate.m`):
-
 ```
 // enable our de-bounce middleware
 config.middlewares = @[[[BrazeDebounceMiddleware alloc] init]];
