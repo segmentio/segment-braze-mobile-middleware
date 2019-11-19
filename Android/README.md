@@ -3,7 +3,7 @@
 ## Integration
 To integrate this middleware under a Swift project please follow these steps:
 
-1. Copy [`BrazeDebounceMiddleware.java`](/app/src/main/BrazeDebounceMiddleware.java) to your Application's source folder and add the to your project.  This middleware will live in and ship with your app.
+1. Copy [`BrazeDebounceMiddleware.java`](/Android/app/src/main/java/com/example/segmentbrazedebounce_android/BrazeDebounceMiddleware.java) to your Application's source folder and add the to your project.  This middleware will live in and ship with your app.
 
 2. Add the following to your Analytics setup (likely in your custom `Application` class):
 ```

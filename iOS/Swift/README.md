@@ -3,7 +3,7 @@
 ## Integration
 To integrate this middleware under a Swift project please follow these steps:
 
-1. Copy [`BrazeDebounceMiddleware.swift`](/SegmentBrazeDebounce-iOS/BrazeDebounceMiddleware.swift) to your Application's source folder and add it to your project.  This middleware will live in and ship with your app.  
+1. Copy [`BrazeDebounceMiddleware.swift`](/iOS/Swift/SegmentBrazeDebounce-iOS/BrazeDebounceMiddleware.swift) to your Application's source folder and add it to your project.  This middleware will live in and ship with your app.  
 
 2. Add the following to your SEGConfiguration setup (likely in `AppDelegate.swift`):
 
