@@ -25,9 +25,9 @@ if payload is IdentityPayload {
 
 # How to add this?
 You can follow our platform specific guides to help you add this middleware to your native mobile projects:
-1. [Android]()
-2. [iOS/Swift]()
-3. [iOS/Objective-C]()
+1. [Android: Java](/Android/README.md)
+2. [iOS: Objective-C](/iOS/Objective-C/README.md)
+3. [iOS: Swift](/iOS/Swift/README.md)
 
 # More information
 
