@@ -3,7 +3,7 @@
 ## Integration
 To integrate this middleware under a Swift project please follow these steps:
 
-1. Copy [`BrazeDebounceMiddleware.java`](/Android/app/src/main/java/com/example/segmentbrazedebounce_android/BrazeDebounceMiddleware.java) to your Application's source folder and add the to your project.  This middleware will live in and ship with your app.
+1. Copy [`BrazeDebounceMiddleware.java`](/Android/SegmentBrazeExample/app/src/main/java/com/example/segmentbrazedebounce_android/BrazeDebounceMiddleware.java) to your Application's source folder and add the to your project.  This middleware will live in and ship with your app.
 
 2. Add the following to your Analytics setup (likely in your custom `Application` class):
 ```
@@ -26,7 +26,7 @@ Analytics analytics = new Analytics.Builder(this, "ZsjbER8OlDJIuD2JlQdfDHKRP3nJY
 ```
 
 ## Sample App
-A sample Swift app leveraging this middleware can be seen [here](/iOS/Android/).
+A sample Swift app leveraging this middleware can be seen [here](/Android/SegmentBrazeExample/).
 
 ## Verification
 Looking at the Segment debugger for your source (Android), Select an `IDENTIFY` event and switch to the `Raw` view.  If de-bounce was applied, you'll be able to see a key in the payload called `integrations` which has an entry `Appboy` that is set to false.  This will instruct segment to NOT send this event to Appboy.
