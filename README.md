@@ -35,4 +35,4 @@ You can follow our platform specific guides to help you add this middleware to y
 ## More information
 Please [contact us](https://segment.com/help/) for more information on this middleware, or if you have further questions.
 
-![Pixel](https://api.segment.io/v1/pixel/page?data=eyJ3cml0ZUtleSI6IkEyUVM0cVFoWWZ3cldhTHYzZWhRWXhncXQzSWU0T2lwIiwidXNlcklkIjoiMDI1cGlrYWNodTAyNSIsImV2ZW50IjoiRW1haWwgT3BlbmVkIn0)
+![Pixel](https://api.segment.io/v1/pixel/page?data=eyJ3cml0ZUtleSI6IkEyUVM0cVFoWWZ3cldhTHYzZWhRWXhncXQzSWU0T2lwIiwiZXZlbnQiOiJSZXBvIE9wZW5lZCJ9)
