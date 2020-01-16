@@ -55,14 +55,17 @@ const NSString *__brazeIntegrationName = @"Appboy";
 }
 
 - (BOOL)shouldSendToBraze:(SEGIdentifyPayload *)payload {
+    // if userID has changed, send it to braze.
     if (payload.userId != self.previousIdentifyPayload.userId) {
         return true;
     }
     
+    // if anonymousID has changed, send it to braze.
     if (payload.anonymousId != self.previousIdentifyPayload.anonymousId) {
         return true;
     }
     
+    // if the traits are equal and haven't changed, don't send it to braze.
     if ([self traitsEqual:payload.traits rhs:self.previousIdentifyPayload.traits]) {
         return false;
     }
