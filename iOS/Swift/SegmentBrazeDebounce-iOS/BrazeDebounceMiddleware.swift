@@ -41,14 +41,17 @@ class BrazeDebounceMiddleware: SEGMiddleware {
     }
     
     func shouldSendToBraze(payload: SEGIdentifyPayload) -> Bool {
+        // if userID has changed, send it to braze.
         if payload.userId != previousIdentifyPayload?.userId {
             return true
         }
         
+        // if anonymousID has changed, send it to braze.
         if payload.anonymousId != previousIdentifyPayload?.anonymousId {
             return true
         }
         
+        // if the traits haven't changed, don't send it to braze.
         if traitsEqual(lhs: payload.traits, rhs: previousIdentifyPayload?.traits) {
             return false
         }
