@@ -52,19 +52,22 @@ public class BrazeDebounceMiddleware implements Middleware {
 
         if (payload != null && previousPayload != null) {
             String anonymousId = (String)payload.get("anonymousId");
-            String prevAnonymousId = (String)payload.get("anonymousId");
+            String prevAnonymousId = (String)previousPayload.get("anonymousId");
 
+            // if the anonymous ID has changed, send it to braze.
             if (!anonymousId.equals(prevAnonymousId)) {
                 return true;
             }
 
             String userId = (String)payload.get("userId");
-            String prevUserId = (String)payload.get("userId");
+            String prevUserId = (String)previousPayload.get("userId");
 
+            // If the user ID has changed, send it to braze.
             if (!userId.equals(prevUserId)) {
                 return true;
             }
 
+            // if the traits haven't changed, don't send it to braze.
             if (payload.get("traits").equals(previousPayload.get("traits"))) {
                 return false;
             }
