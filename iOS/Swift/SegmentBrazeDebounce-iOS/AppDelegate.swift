@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        let config = SEGAnalyticsConfiguration(writeKey: "YOUR-WRITE-KEY-HERE")
+        let config = SEGAnalyticsConfiguration(writeKey: "CkyottiZSWVpZlpdTduOiFLOk1uhKMYj")
         config.trackApplicationLifecycleEvents = true
         // make things a little easier to debug.
         config.flushInterval = 1
