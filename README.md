@@ -1,6 +1,6 @@
 # Segment<>Braze Middleware
 
-Official repository explaining the `Braze Debounce Identify()` functionality for customers using both products via direct Segment integration. This codebase is only an example for iOS and Android. For `analytics.js` you can directly access similar functionality via [source settings](https://app.segment.com) as explained [here](https://www.segment.com/docs/connections/sources/catalog/libraries/website/javascript/#middleware). This contains example code to enable Braze Debounce Identify on mobile client in addition to sample apps to help get you started on (iOS)[/iOS/] and (Android)[/Android/].
+Official repository explaining the `Braze Debounce Identify()` functionality for customers using both products via direct Segment integration. This codebase is only an example for iOS and Android. For `analytics.js` you can directly access similar functionality via [source settings](https://app.segment.com) as explained [here](https://www.segment.com/docs/connections/sources/catalog/libraries/website/javascript/#middleware). This contains example code to enable Braze Debounce Identify on mobile client in addition to sample apps to help get you started on [iOS](/iOS/) and [Android](/Android/).
 
 ## What are middlewares?
 Middlewares are a powerful mechanism that can augment the events collected by the SDK. A middleware is a simple function that is invoked by the Segment SDK and can be used to monitor, modify or reject events. They are available across all analytics-{ [ios](https://segment.com/docs/sources/mobile/ios/#middlewares) | [android](https://segment.com/docs/sources/mobile/android/#middlewares) | [js](https://www.segment.com/docs/connections/sources/catalog/libraries/website/javascript/#middleware)}
@@ -31,7 +31,7 @@ You can follow our platform specific guides to help you add this middleware to y
 1. [Android: Java](/Android/README.md)
 2. [iOS: Objective-C](/iOS/Objective-C/README.md)
 3. [iOS: Swift](/iOS/Swift/README.md)
-4. [Website:Javascript](https://www.segment.com/docs/connections/sources/catalog/libraries/website/javascript/#middleware)
+4. [Website: Javascript](https://www.segment.com/docs/connections/sources/catalog/libraries/website/javascript/#middleware)
 
 ## More information
 Please [contact us](https://segment.com/help/) for more information on this middleware, or if you have further questions.
