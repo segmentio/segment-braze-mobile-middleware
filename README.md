@@ -31,7 +31,8 @@ You can follow our platform specific guides to help you add this middleware to y
 1. [Android: Java](/Android/README.md)
 2. [iOS: Objective-C](/iOS/Objective-C/README.md)
 3. [iOS: Swift](/iOS/Swift/README.md)
-4. [Website: Javascript](https://www.segment.com/docs/connections/sources/catalog/libraries/website/javascript/#middleware)
+
+For your Website sources of type Javascript or Project under Segment please follow directions [here](https://www.segment.com/docs/connections/sources/catalog/libraries/website/javascript/#middleware).
 
 ## More information
 Please [contact us](https://segment.com/help/) for more information on this middleware, or if you have further questions.
