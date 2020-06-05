@@ -23,6 +23,10 @@ if payload is IdentityPayload {
 
 ```
 
+The illustration below further elaborates upon this logic:
+![BrazeScenarios](braze-scenarios.png)
+
+
 ## Does this work under both cloud and device mode?
 Yes. This middleware works under both [cloud and device modes](https://segment.com/docs/destinations/#connection-modes) for the Segment<>Braze [integration](https://segment.com/docs/sources/cloud-apps/braze/). There is not confguration or implementation burden on you and the Segment libraries take care of this internally.
 
