@@ -18,7 +18,10 @@ class BrazeDebounceMiddleware: SEGMiddleware {
         var workingContext = context
         
         // only process identify payloads.
-        guard let identify = workingContext.payload as? SEGIdentifyPayload else { return }
+        guard let identify = workingContext.payload as? SEGIdentifyPayload else { 
+            next(workingContext)
+            return
+        }
         
         if shouldSendToBraze(payload: identify) {
             // we don't need to do anything, it's different content.
