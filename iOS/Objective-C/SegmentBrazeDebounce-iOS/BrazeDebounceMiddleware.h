@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@import Analytics;
+@import Segment;
 
 
 NS_ASSUME_NONNULL_BEGIN
