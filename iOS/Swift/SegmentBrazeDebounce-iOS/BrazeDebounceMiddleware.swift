@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import Analytics
+import Segment
 
 fileprivate let __brazeIntegrationName = "Appboy"
 

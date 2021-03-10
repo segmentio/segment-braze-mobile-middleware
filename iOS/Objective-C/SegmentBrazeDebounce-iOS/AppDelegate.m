@@ -9,7 +9,7 @@
 #import "AppDelegate.h"
 #import "BrazeDebounceMiddleware.h"
 
-@import Analytics;
+@import Segment;
 
 @interface AppDelegate ()
 
