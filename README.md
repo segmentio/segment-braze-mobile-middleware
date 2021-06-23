@@ -17,7 +17,7 @@ if payload is IdentityPayload {
        payload.traits != lastTraits {
             // do nothing, it'll get sent like normal.
        } else {
-            removeBrazeFromDestionationList()
+            removeBrazeFromDestinationList()
        }
 }
 
